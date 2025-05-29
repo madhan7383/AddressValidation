@@ -113,86 +113,6 @@ function App() {
       "Extracted_Data": "44 Cook Street, Suite #700",
       "Match_Score": "100",
       "Status": ""
-    },
-    {
-      "Unique_Id": "614",
-      "Company_Name": "Strength Capital",
-      "Website_URL": "https://www.strengthcapital.com/contact",
-      "Field_Type": "Phone_Validation",
-      "Input_Data": "0",
-      "Extracted_Data": "",
-      "Match_Score": "0",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "614",
-      "Company_Name": "Strength Capital",
-      "Website_URL": "https://www.strengthcapital.com/contact",
-      "Field_Type": "Email_Validation",
-      "Input_Data": "mark@strengthcapital.com",
-      "Extracted_Data": "",
-      "Match_Score": "0",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "5710",
-      "Company_Name": "Teak Capital",
-      "Website_URL": "https://www.teakcapital.pt/about-us/",
-      "Field_Type": "Address_Validation",
-      "Input_Data": "Edifv?cio Oceanus, Avenida da Boavista, 3265 - 3.3",
-      "Extracted_Data": "Avenida da Boavista, 3265 - 3.3",
-      "Match_Score": "77",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "5710",
-      "Company_Name": "Teak Capital",
-      "Website_URL": "https://www.teakcapital.pt/about-us/",
-      "Field_Type": "Phone_Validation",
-      "Input_Data": "+351 22 245 0710",
-      "Extracted_Data": "+351 22 245 0710",
-      "Match_Score": "100",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "5710",
-      "Company_Name": "Teak Capital",
-      "Website_URL": "https://www.teakcapital.pt/about-us/",
-      "Field_Type": "Email_Validation",
-      "Input_Data": "info@teakcapital.pt",
-      "Extracted_Data": "info@teakcapital.pt",
-      "Match_Score": "100",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "3337",
-      "Company_Name": "Noro-Moseley Partners",
-      "Website_URL": "https://noromoseley.com/contact-us/",
-      "Field_Type": "Address_Validation",
-      "Input_Data": "The Medici Building, 3284 Northside Parkway, Northwest, Suite 525",
-      "Extracted_Data": "3284 Northside Parkway, NW Suite 525",
-      "Match_Score": "69",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "3337",
-      "Company_Name": "Noro-Moseley Partners",
-      "Website_URL": "https://noromoseley.com/contact-us/",
-      "Field_Type": "Phone_Validation",
-      "Input_Data": "(404) 233-1966",
-      "Extracted_Data": "404.233.1966",
-      "Match_Score": "77",
-      "Status": ""
-    },
-    {
-      "Unique_Id": "3337",
-      "Company_Name": "Noro-Moseley Partners",
-      "Website_URL": "https://noromoseley.com/contact-us/",
-      "Field_Type": "Email_Validation",
-      "Input_Data": "0",
-      "Extracted_Data": "",
-      "Match_Score": "0",
-      "Status": ""
     }
   ];
 
@@ -207,6 +127,11 @@ function App() {
   const handleModify = (index) => {
     const updated = [...csvData];
     updated[index].Status = 'Modified';
+    setCsvData(updated);
+  };
+
+  const handleAcceptAll = () => {
+    const updated = csvData.map(row => ({ ...row, Status: 'Accepted' }));
     setCsvData(updated);
   };
 
@@ -228,7 +153,18 @@ function App() {
               <TableCell>Extracted Data</TableCell>
               <TableCell>Match Score</TableCell>
               <TableCell>Status</TableCell>
-              <TableCell>Actions</TableCell>
+              <TableCell>
+                <Button 
+                  variant="contained" 
+                  color="success" 
+                  onClick={handleAcceptAll}
+                  sx={{ mb: 1 }}
+                >
+                  Accept All
+                </Button>
+                <br />
+                Actions
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
