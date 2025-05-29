@@ -34,15 +34,164 @@ function App() {
       "Match_Score": "0",
       "Status": ""
     },
-    // ... continuing with all the data from your CSV file
     {
-      "Unique_Id": "4955",
-      "Company_Name": "Hunter Valley Company",
-      "Website_URL": "https://www.huntervalleyco.com/contact",
+      "Unique_Id": "2505",
+      "Company_Name": "CDH Investments",
+      "Website_URL": "https://www.cdhfund.com/en/contact-en/",
       "Field_Type": "Email_Validation",
-      "Input_Data": "info@huntervalleyco.com",
-      "Extracted_Data": "ocolligan@huntervalleyco.com",
-      "Match_Score": "82",
+      "Input_Data": "cdh@cdhfund.com",
+      "Extracted_Data": "",
+      "Match_Score": "0",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "2325",
+      "Company_Name": "IDG Capital",
+      "Website_URL": "https://en.idgcapital.com/contact-us",
+      "Field_Type": "Address_Validation",
+      "Input_Data": "6 Floor, Tower A, COFCO Plaza, 8 Jianguomennei Avenue",
+      "Extracted_Data": "6 Floor, Tower A, COFCO Plaza 8 Jianguomennei Ave.",
+      "Match_Score": "95",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "2325",
+      "Company_Name": "IDG Capital",
+      "Website_URL": "https://en.idgcapital.com/contact-us",
+      "Field_Type": "Phone_Validation",
+      "Input_Data": "+86 10 8590 1800",
+      "Extracted_Data": "86-10-8590-1800",
+      "Match_Score": "77",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "2325",
+      "Company_Name": "IDG Capital",
+      "Website_URL": "https://en.idgcapital.com/contact-us",
+      "Field_Type": "Email_Validation",
+      "Input_Data": "0",
+      "Extracted_Data": "N/A",
+      "Match_Score": "0",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "1434",
+      "Company_Name": "Oak Hill Capital",
+      "Website_URL": "https://oakhill.com/firm/",
+      "Field_Type": "Address_Validation",
+      "Input_Data": "65 East 55th Street, 32nd Floor",
+      "Extracted_Data": "65 East 55th Street 32nd Floor",
+      "Match_Score": "98",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "1434",
+      "Company_Name": "Oak Hill Capital",
+      "Website_URL": "https://oakhill.com/firm/",
+      "Field_Type": "Phone_Validation",
+      "Input_Data": "(212) 527-8400",
+      "Extracted_Data": "212-527-8400",
+      "Match_Score": "85",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "1434",
+      "Company_Name": "Oak Hill Capital",
+      "Website_URL": "https://oakhill.com/firm/",
+      "Field_Type": "Email_Validation",
+      "Input_Data": "0",
+      "Extracted_Data": "",
+      "Match_Score": "0",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "614",
+      "Company_Name": "Strength Capital",
+      "Website_URL": "https://www.strengthcapital.com/contact",
+      "Field_Type": "Address_Validation",
+      "Input_Data": "44 Cook Street, Suite #700",
+      "Extracted_Data": "44 Cook Street, Suite #700",
+      "Match_Score": "100",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "614",
+      "Company_Name": "Strength Capital",
+      "Website_URL": "https://www.strengthcapital.com/contact",
+      "Field_Type": "Phone_Validation",
+      "Input_Data": "0",
+      "Extracted_Data": "",
+      "Match_Score": "0",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "614",
+      "Company_Name": "Strength Capital",
+      "Website_URL": "https://www.strengthcapital.com/contact",
+      "Field_Type": "Email_Validation",
+      "Input_Data": "mark@strengthcapital.com",
+      "Extracted_Data": "",
+      "Match_Score": "0",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "5710",
+      "Company_Name": "Teak Capital",
+      "Website_URL": "https://www.teakcapital.pt/about-us/",
+      "Field_Type": "Address_Validation",
+      "Input_Data": "Edifv?cio Oceanus, Avenida da Boavista, 3265 - 3.3",
+      "Extracted_Data": "Avenida da Boavista, 3265 - 3.3",
+      "Match_Score": "77",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "5710",
+      "Company_Name": "Teak Capital",
+      "Website_URL": "https://www.teakcapital.pt/about-us/",
+      "Field_Type": "Phone_Validation",
+      "Input_Data": "+351 22 245 0710",
+      "Extracted_Data": "+351 22 245 0710",
+      "Match_Score": "100",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "5710",
+      "Company_Name": "Teak Capital",
+      "Website_URL": "https://www.teakcapital.pt/about-us/",
+      "Field_Type": "Email_Validation",
+      "Input_Data": "info@teakcapital.pt",
+      "Extracted_Data": "info@teakcapital.pt",
+      "Match_Score": "100",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "3337",
+      "Company_Name": "Noro-Moseley Partners",
+      "Website_URL": "https://noromoseley.com/contact-us/",
+      "Field_Type": "Address_Validation",
+      "Input_Data": "The Medici Building, 3284 Northside Parkway, Northwest, Suite 525",
+      "Extracted_Data": "3284 Northside Parkway, NW Suite 525",
+      "Match_Score": "69",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "3337",
+      "Company_Name": "Noro-Moseley Partners",
+      "Website_URL": "https://noromoseley.com/contact-us/",
+      "Field_Type": "Phone_Validation",
+      "Input_Data": "(404) 233-1966",
+      "Extracted_Data": "404.233.1966",
+      "Match_Score": "77",
+      "Status": ""
+    },
+    {
+      "Unique_Id": "3337",
+      "Company_Name": "Noro-Moseley Partners",
+      "Website_URL": "https://noromoseley.com/contact-us/",
+      "Field_Type": "Email_Validation",
+      "Input_Data": "0",
+      "Extracted_Data": "",
+      "Match_Score": "0",
       "Status": ""
     }
   ];
@@ -55,9 +204,9 @@ function App() {
     setCsvData(updated);
   };
 
-  const handleReject = (index) => {
+  const handleModify = (index) => {
     const updated = [...csvData];
-    updated[index].Status = 'Rejected';
+    updated[index].Status = 'Modified';
     setCsvData(updated);
   };
 
@@ -105,9 +254,9 @@ function App() {
                   <Button 
                     variant="contained" 
                     color="error" 
-                    onClick={() => handleReject(index)}
+                    onClick={() => handleModify(index)}
                   >
-                    Reject
+                    Modify
                   </Button>
                 </TableCell>
               </TableRow>
